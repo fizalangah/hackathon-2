@@ -77,8 +77,8 @@ As a user, I want to mark a task as complete or incomplete so that I can track m
 
 ### Edge Cases
 
-- What happens when a user tries to update/delete a non-existent task ID?
-- What happens when a user provides invalid input (e.g., non-numeric ID)?
+- When a user tries to update/delete a non-existent task ID, the system MUST display a generic "Task not found" message.
+- When a user provides invalid input (e.g., non-numeric ID, empty title), the system MUST simply re-display the prompt without explanation.
 
 ## Requirements *(mandatory)*
 
@@ -90,7 +90,7 @@ As a user, I want to mark a task as complete or incomplete so that I can track m
 - **FR-004**: System MUST allow users to update the title and/or description of an existing task by its ID.
 - **FR-005**: System MUST allow users to delete a task by its ID.
 - **FR-006**: System MUST allow users to toggle the completion status of a task by its ID.
-- **FR-007**: System MUST provide a menu-driven command-line interface.
+- **FR-007**: System MUST provide a menu-driven command-line interface, presenting a numbered list of operations (e.g., 1. Add Task, 2. View Tasks, 3. Update Task, etc.), including an option to exit.
 - **FR-008**: System MUST provide clear prompts and feedback to the user.
 - **FR-009**: System MUST gracefully handle invalid user input (e.g., non-numeric input for ID, invalid menu choices).
 
@@ -109,3 +109,9 @@ As a user, I want to mark a task as complete or incomplete so that I can track m
 - **SC-001**: Users can successfully perform all five core task management operations (add, view, update, delete, mark complete/incomplete) through the CLI.
 - **SC-002**: The application responds to all user commands within 1 second.
 - **SC-003**: 100% of invalid user inputs are handled gracefully without crashing the application.
+
+## Clarifications
+### Session 2026-02-07
+- Q: What are the main menu options for the CLI application? → A: A numbered list of operations (e.g., 1. Add Task, 2. View Tasks, 3. Update Task, etc.), with an option to exit.
+- Q: How should the application respond when a user attempts to update or delete a non-existent task ID? → A: Display a generic "Task not found" message.
+- Q: What specific feedback should be provided for invalid user input (e.g., non-numeric ID where an integer is expected, empty title)? → A: Simply re-display the prompt without explanation.
