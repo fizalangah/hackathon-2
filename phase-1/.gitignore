@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+dist/
+*.egg-info/
+.pytest_cache/
+.coverage
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Gemini Specific
+.gemini/
+history/
