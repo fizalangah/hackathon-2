@@ -31,7 +31,12 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+*   [ ] **Spec First, Always**: No implementation without an approved specification.
+*   [ ] **No Manual Coding**: All code must be generated via AI (Claude Code / Gemini).
+*   [ ] **Incremental Evolution**: Each phase builds on the previous one.
+*   [ ] **Clean Architecture**: Separation of concerns (models, services, CLI).
+*   [ ] **Simplicity First**: Prefer clarity over cleverness.
+*   [ ] **Traceability**: Every feature must map back to a spec and task.
 
 ## Project Structure
 
