@@ -32,7 +32,7 @@
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete
 
 - [x] T003 Define `Task` class in `src/todo_app/models/task.py`.
-- [ ] T004 Implement in-memory `TaskCollection` (or similar data structure) in `src/todo_app/services/task_repository.py` to manage `Task` objects, including ID generation.
+- [x] T004 Implement in-memory `TaskCollection` (or similar data structure) in `src/todo_app/services/task_repository.py` to manage `Task` objects, including ID generation.
 
 **Checkpoint**: Foundation ready - user story implementation can now begin in parallel
 
