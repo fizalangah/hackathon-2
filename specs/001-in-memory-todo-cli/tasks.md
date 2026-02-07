@@ -22,7 +22,7 @@
 
 **Purpose**: Project initialization and basic structure
 
-- [ ] T001 Create project structure `src/todo_app/` with `__init__.py` files.
+- [x] T001 Create project structure `src/todo_app/` with `__init__.py` files.
 - [ ] T002 Initialize Python environment (Python 3.13+) and virtual environment.
 
 ## Phase 2: Foundational (Blocking Prerequisites)
